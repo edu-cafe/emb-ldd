@@ -1,0 +1,13 @@
+menuconfig MY_TEST
+    bool "RaspberryPi MY_TEST"
+	depends on ARCH_BCM2835
+    ---help---
+
+if MY_TEST
+
+config MY_LED
+	tristate "MY LED support"
+	depends on ARCH_BCM2835
+	help
+
+endif
